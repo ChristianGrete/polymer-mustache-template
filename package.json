@@ -15,8 +15,8 @@
       "url": "https://christiangrete.com"
     }
   ],
-  "description": "A Mustache template for Polymer web components",
   "dependencies": {},
+  "description": "A Mustache template for Polymer web components",
   "devDependencies": {},
   "files": [
     "*.md",
