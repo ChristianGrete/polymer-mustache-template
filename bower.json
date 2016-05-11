@@ -16,6 +16,9 @@
     ".gitignore",
     ".npmignore",
     ".tm_properties",
+    "bower_components/",
+    "node_modules/",
+    "npm-debug.log",
     "package.json"
   ],
   "keywords": [

@@ -3,4 +3,7 @@
 .gitignore
 .npmignore
 .tm_properties
+bower_components/
 bower.json
+node_modules/
+npm-debug.log
