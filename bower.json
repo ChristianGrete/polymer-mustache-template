@@ -13,6 +13,7 @@
   "ignore": [
     ".DS_Store",
     ".git/",
+    ".tm_properties",
     "package.json"
   ],
   "keywords": [
