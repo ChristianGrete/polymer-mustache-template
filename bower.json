@@ -13,6 +13,7 @@
   "ignore": [
     ".bowerrc",
     ".DS_Store",
+    ".editorconfig",
     ".git/",
     ".gitignore",
     ".npmignore",
