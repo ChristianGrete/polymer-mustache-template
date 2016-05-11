@@ -1,0 +1,7 @@
+include = "{$include,.bowerrc,.editorconfig,.git*,.grunt,.jshintrc,.npm*,.tm_properties,.travis.yml}"
+invisiblesMap = " ·\n¶\t›"
+projectDirectory = '$CWD'
+softWrap = true
+softTabs = true
+tabSize = 2
+wrapColumn = 80
