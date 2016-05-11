@@ -1,0 +1,41 @@
+{
+  "authors": [
+    {
+      "email": "webmaster@christiangrete.com",
+      "homepage": "https://christiangrete.com",
+      "name": "Christian Grete"
+    }
+  ],
+  "dependencies": {},
+  "description": "A Mustache template for Polymer web components",
+  "devDependencies": {},
+  "homepage": "https://github.com/ChristianGrete/polymer-mustache-template",
+  "ignore": [
+    ".DS_Store",
+    ".git/",
+    "package.json"
+  ],
+  "keywords": [
+    "boilerplate",
+    "component",
+    "components",
+    "custom",
+    "dom",
+    "element",
+    "elements",
+    "module,"
+    "mustache",
+    "polymer",
+    "template",
+    "web"
+  ],
+  "license": "MIT",
+  "main": "dist/template.mustache",
+  "name": "polymer-mustache-template",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChristianGrete/polymer-mustache-template.git"
+  },
+  "version": "0.0.0"
+}
