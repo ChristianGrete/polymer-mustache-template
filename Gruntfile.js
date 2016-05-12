@@ -23,11 +23,20 @@ module.exports = function ( $grunt ) {
 
       _config = {
           'cfg': _$grunt__file__readJSON( _URL__GRUNT_CONFIG_FILE ),
+          'jsonlint': {
+              'config': [
+                  '<%= cfg.PATH__CONFIG %>/<%= cfg.GLOB__JSON__RECURSIVE %>',
+                  '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__BOWERRC %>'
+                ],
+              'manifests': '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>'
+            },
           'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE )
         },
 
       _tasks = {
-          'default': []
+          'default': [
+              'jsonlint'
+            ]
         };
 
     _timeGrunt( $grunt ),
