@@ -2,6 +2,7 @@
 
 var
 
+  _URL__GRUNT_CONFIG_FILE = './config/grunt.json',
   _URL__NPM_MANIFEST_FILE = './package.json',
 
   _gruntRegisterTasks = require('grunt-register-tasks'),
@@ -21,6 +22,7 @@ module.exports = function ( $grunt ) {
         ],
 
       _config = {
+          'cfg': _$grunt__file__readJSON( _URL__GRUNT_CONFIG_FILE ),
           'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE )
         },
 
