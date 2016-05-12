@@ -19,6 +19,7 @@
     ".npmignore",
     ".tm_properties",
     "bower_components/",
+    "config/",
     "Gruntfile.js",
     "node_modules/",
     "npm-debug.log",
