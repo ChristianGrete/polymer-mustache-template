@@ -20,6 +20,7 @@ module.exports = function ( $grunt ) {
       _plugins = [
           'grunt-bump',
           'grunt-contrib-*',
+          'grunt-exec',
           'grunt-jsonlint',
           'grunt-string-replace'
         ],
@@ -53,6 +54,10 @@ module.exports = function ( $grunt ) {
                   'expand': true,
                   'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'
                 }
+            },
+          'exec': {
+              'commit': 'git commit -m "release(v<%= pkg.version %>): distribute"',
+              'tag': 'git tag -a v<%= pkg.version %> -m "<%= grunt.option(\'message\') %>"'
             },
           'jsonlint': {
               'config': [
