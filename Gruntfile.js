@@ -43,14 +43,35 @@ module.exports = function ( $grunt ) {
                 ],
               'manifests': '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>'
             },
-          'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE )
+          'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE ),
+          'string-replace': {
+              'dist': {
+                  'files': [
+                      {
+                        'cwd': '<%= cfg.PATH__DIST %>',
+                        'dest': '<%= cfg.PATH__DIST %>',
+                        'expand': true,
+                        'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'
+                      }
+                    ],
+                  'options': {
+                      'replacements': [
+                          {
+                            'pattern': /{{> banner }}/g,
+                            'replacement': _$grunt__file.read( _URL__BANNER_FILE )
+                          }
+                        ]
+                    }
+                }
+            }
         },
 
       _tasks = {
           'build': [
               'default',
               'clean',
-              'copy'
+              'copy',
+              'string-replace'
             ],
           'default': [
               'jsonlint'
