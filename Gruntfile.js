@@ -45,6 +45,11 @@ module.exports = function ( $grunt ) {
         },
 
       _tasks = {
+          'build': [
+              'default',
+              'clean',
+              'copy'
+            ],
           'default': [
               'jsonlint'
             ]
