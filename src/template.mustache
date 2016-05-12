@@ -1,0 +1,17 @@
+<link href="{{ imports.polymer }}" rel="import">
+
+{{# imports.additional }}
+  <link href="{{ . }}" rel="import">
+{{/ imports.additional }}
+
+<dom-module id="{{ id }}">
+  <template>
+    {{# style }}
+      <style>{{{ style }}}</style>
+    {{/ style }}
+
+    {{{ markup }}}
+  </template>
+
+  <script>{{{ script }}}</script>
+</dom-module>
