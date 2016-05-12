@@ -22,6 +22,7 @@ module.exports = function ( $grunt ) {
           'grunt-contrib-*',
           'grunt-exec',
           'grunt-jsonlint',
+          'grunt-modify-json',
           'grunt-string-replace'
         ],
 
@@ -65,6 +66,20 @@ module.exports = function ( $grunt ) {
                   '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__BOWERRC %>'
                 ],
               'manifests': '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>'
+            },
+          'modify_json': {
+              'manifests': {
+                  'files': {
+                      '<%= cfg.PATH__ROOT %>': '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>'
+                    },
+                  'options': {
+                      'add': true,
+                      'fields': {
+                          'private': false
+                        },
+                      'indent': 2
+                    }
+                }
             },
           'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE ),
           'string-replace': {
