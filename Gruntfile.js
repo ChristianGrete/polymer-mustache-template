@@ -23,6 +23,14 @@ module.exports = function ( $grunt ) {
 
       _config = {
           'cfg': _$grunt__file__readJSON( _URL__GRUNT_CONFIG_FILE ),
+          'copy': {
+              'src': {
+                  'cwd': '<%= cfg.PATH__SRC %>',
+                  'dest': '<%= cfg.PATH__DIST %>',
+                  'expand': true,
+                  'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'
+                }
+            },
           'jsonlint': {
               'config': [
                   '<%= cfg.PATH__CONFIG %>/<%= cfg.GLOB__JSON__RECURSIVE %>',
