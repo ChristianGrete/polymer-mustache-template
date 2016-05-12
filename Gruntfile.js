@@ -23,6 +23,9 @@ module.exports = function ( $grunt ) {
 
       _config = {
           'cfg': _$grunt__file__readJSON( _URL__GRUNT_CONFIG_FILE ),
+          'clean': {
+              'dist': '<%= cfg.PATH__DIST %>'
+            },
           'copy': {
               'src': {
                   'cwd': '<%= cfg.PATH__SRC %>',
