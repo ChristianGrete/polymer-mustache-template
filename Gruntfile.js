@@ -18,7 +18,8 @@ module.exports = function ( $grunt ) {
 
       _plugins = [
           'grunt-contrib-*',
-          'grunt-jsonlint'
+          'grunt-jsonlint',
+          'grunt-string-replace'
         ],
 
       _config = {
