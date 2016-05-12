@@ -16,7 +16,8 @@ module.exports = function ( $grunt ) {
       _$grunt__file__readJSON = _$grunt__file.readJSON,
 
       _plugins = [
-          
+          'grunt-contrib-*',
+          'grunt-jsonlint'
         ],
 
       _config = {
