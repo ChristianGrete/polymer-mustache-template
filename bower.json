@@ -23,7 +23,8 @@
     "Gruntfile.js",
     "node_modules/",
     "npm-debug.log",
-    "package.json"
+    "package.json",
+    "src/"
   ],
   "keywords": [
     "boilerplate",
