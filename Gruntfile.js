@@ -2,6 +2,7 @@
 
 var
 
+  _URL__BANNER_FILE = './config/banner.mustache',
   _URL__GRUNT_CONFIG_FILE = './config/grunt.json',
   _URL__NPM_MANIFEST_FILE = './package.json',
 
