@@ -1,6 +1,29 @@
 # polymer-mustache-template
 
+[![Task Runner](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com)
+[![Latest GitHub Tag](https://img.shields.io/github/tag/ChristianGrete/polymer-mustache-template.svg)](https://github.com/ChristianGrete/polymer-mustache-template/tags)
+[![Latest GitHub Release](https://img.shields.io/github/release/ChristianGrete/polymer-mustache-template.svg)](https://github.com/ChristianGrete/polymer-mustache-template/releases/latest)
+[![Node.js Module Version](https://img.shields.io/npm/v/polymer-mustache-template.svg)](https://www.npmjs.com/package/polymer-mustache-template)
+[![Downloads via npm per Month](https://img.shields.io/npm/dm/polymer-mustache-template.svg)](https://www.npmjs.com/package/polymer-mustache-template)
+[![Bower Component Version](https://img.shields.io/bower/v/polymer-mustache-template.svg)](http://bower.io/search/?q=polymer-mustache-template)
+
 > A [Mustache](https://mustache.github.io) template for [Polymer](https://www.polymer-project.org) web components
+
+__polymer-mustache-template__ provides a [Mustache](https://mustache.github.io) template file that can be used to render [Polymer](https://www.polymer-project.org) _local DOM_ modules (custom elements) from external HTML, CSS and JavaScript files.
+
+For instance, this template could be used by a task runner to build web components out of different sources.
+
+## Getting started
+
+### Installation
+Install this template as a dependency to your project using [npm](https://www.npmjs.org):
+```sh
+$ npm install --save polymer-mustache-template
+```
+Alternatively, it is also available on [Bower](http://bower.io):
+```sh
+$ bower install --save polymer-mustache-template
+```
 
 ## Policy
 
