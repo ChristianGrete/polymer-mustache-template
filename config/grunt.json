@@ -1,0 +1,9 @@
+{
+  "FILE__BOWERRC": ".bowerrc",
+  "GLOB__ANY_FILE__RECURSIVE": "**/*",
+  "GLOB__JSON__RECURSIVE": "**/*.json",
+  "GLOB__MANIFESTS": "{bower,package}.json",
+  "PATH__CONFIG": "./config",
+  "PATH__NODE_MODULES": "./node_modules",
+  "PATH__ROOT": "."
+}
