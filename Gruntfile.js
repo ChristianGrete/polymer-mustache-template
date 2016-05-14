@@ -50,7 +50,7 @@ module.exports = function ( $grunt ) {
             },
           'copy': {
               'src': {
-                  'cwd': '<%= cfg.PATH__SRC %>',
+                  'cwd': '<%= cfg.PATH__SRC__MUSTACHE %>',
                   'dest': '<%= cfg.PATH__DIST %>',
                   'expand': true,
                   'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'

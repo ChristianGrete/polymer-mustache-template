@@ -8,5 +8,5 @@
   "PATH__DIST": "./dist",
   "PATH__NODE_MODULES": "./node_modules",
   "PATH__ROOT": ".",
-  "PATH__SRC": "./src"
+  "PATH__SRC__MUSTACHE": "./src/mustache"
 }
