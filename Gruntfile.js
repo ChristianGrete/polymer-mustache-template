@@ -22,8 +22,7 @@ module.exports = function ( $grunt ) {
           'grunt-contrib-*',
           'grunt-exec',
           'grunt-jsonlint',
-          'grunt-modify-json',
-          'grunt-string-replace'
+          'grunt-modify-json'
         ],
 
       _config = {
@@ -48,7 +47,10 @@ module.exports = function ( $grunt ) {
           'clean': {
               'dist': '<%= cfg.PATH__DIST %>'
             },
-          'copy': {
+          'concat': {
+              'options': {
+                  'banner': _$grunt__file.read( _URL__BANNER_FILE ) + '\n',
+                },
               'src': {
                   'cwd': '<%= cfg.PATH__SRC__MUSTACHE %>',
                   'dest': '<%= cfg.PATH__DIST %>',
@@ -81,35 +83,14 @@ module.exports = function ( $grunt ) {
                     }
                 }
             },
-          'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE ),
-          'string-replace': {
-              'dist': {
-                  'files': [
-                      {
-                        'cwd': '<%= cfg.PATH__DIST %>',
-                        'dest': '<%= cfg.PATH__DIST %>',
-                        'expand': true,
-                        'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'
-                      }
-                    ],
-                  'options': {
-                      'replacements': [
-                          {
-                            'pattern': /{{> banner }}/g,
-                            'replacement': _$grunt__file.read( _URL__BANNER_FILE )
-                          }
-                        ]
-                    }
-                }
-            }
+          'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE )
         },
 
       _tasks = {
           'build': [
               'default',
               'clean',
-              'copy',
-              'string-replace'
+              'concat'
             ],
           'default': [
               'jsonlint'
