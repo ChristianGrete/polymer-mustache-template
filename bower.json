@@ -11,7 +11,7 @@
   "devDependencies": {},
   "homepage": "https://github.com/ChristianGrete/polymer-mustache-template",
   "ignore": [
-    ".baseDir*"
+    ".baseDir*",
     ".bowerrc",
     ".DS_Store",
     ".editorconfig",
