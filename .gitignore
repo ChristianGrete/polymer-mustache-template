@@ -1,4 +1,6 @@
+.baseDir*
 .DS_Store
+.tscache/
 bower_components/
 index.js
 node_modules/

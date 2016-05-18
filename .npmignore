@@ -1,3 +1,4 @@
+.baseDir*
 .bowerrc
 .DS_Store
 .editorconfig
@@ -5,6 +6,7 @@
 .gitignore
 .npmignore
 .tm_properties
+.tscache/
 bin/
 bower_components/
 bower.json
