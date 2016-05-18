@@ -1,5 +1,6 @@
 {
   "FILE__BOWERRC": ".bowerrc",
+  "FILE__INDEX_JS": "index.js",
   "FILE__INDEX_TS": "index.ts",
   "FILE__TEMPLATE_MUSTACHE": "template.mustache",
   "FILE__TSCONFIG_JSON": "tsconfig.json",
