@@ -1,5 +1,6 @@
 {
   "FILE__BOWERRC": ".bowerrc",
+  "FILE__INDEX_TS": "index.ts",
   "FILE__TEMPLATE_MUSTACHE": "template.mustache",
   "FILE__TSCONFIG_JSON": "tsconfig.json",
   "GLOB__ANY_FILE__RECURSIVE": "**/*",
@@ -9,5 +10,6 @@
   "PATH__DIST": "./dist",
   "PATH__NODE_MODULES": "./node_modules",
   "PATH__ROOT": ".",
-  "PATH__SRC__MUSTACHE": "./src/mustache"
+  "PATH__SRC__MUSTACHE": "./src/mustache",
+  "PATH__SRC__TS": "./src/ts"
 }
