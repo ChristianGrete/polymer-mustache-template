@@ -6,6 +6,7 @@
   "FILE__NPM_DEBUT_LOG": "npm-debug.log",
   "FILE__TEMPLATE_MUSTACHE": "template.mustache",
   "FILE__TSCONFIG_JSON": "tsconfig.json",
+  "FILE__TSLINT_JSON": "tslint.json",
   "GLOB__ANY_BASEDIR": ".baseDir*",
   "GLOB__ANY_FILE__RECURSIVE": "**/*",
   "GLOB__JSON__RECURSIVE": "**/*.json",
