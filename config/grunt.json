@@ -1,6 +1,7 @@
 {
   "FILE__BOWERRC": ".bowerrc",
   "FILE__TEMPLATE_MUSTACHE": "template.mustache",
+  "FILE__TSCONFIG_JSON": "tsconfig.json",
   "GLOB__ANY_FILE__RECURSIVE": "**/*",
   "GLOB__JSON__RECURSIVE": "**/*.json",
   "GLOB__MANIFESTS": "{bower,package}.json",
