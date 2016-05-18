@@ -101,6 +101,12 @@ module.exports = function ( $grunt ) {
                   'src': '<%= cfg.PATH__SRC__TS %>/<%= cfg.FILE__INDEX_TS %>',
                   'tsconfig': '<%= cfg.PATH__CONFIG %>/<%= cfg.FILE__TSCONFIG_JSON %>'
                 }
+            },
+          'tslint': {
+              'options': {
+                  'configuration': '<%= cfg.PATH__CONFIG %>/<%= cfg.FILE__TSLINT_JSON %>'
+                },
+              'src': '<%= cfg.PATH__SRC__TS %>/<%= cfg.FILE__INDEX_TS %>'
             }
         },
 
@@ -112,7 +118,8 @@ module.exports = function ( $grunt ) {
               'ts'
             ],
           'default': [
-              'jsonlint'
+              'jsonlint',
+              'tslint'
             ]
         };
 
