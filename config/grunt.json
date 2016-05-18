@@ -1,9 +1,12 @@
 {
   "FILE__BOWERRC": ".bowerrc",
+  "FILE__DS_STORE": ".DS_Store",
   "FILE__INDEX_JS": "index.js",
   "FILE__INDEX_TS": "index.ts",
+  "FILE__NPM_DEBUT_LOG": "npm-debug.log",
   "FILE__TEMPLATE_MUSTACHE": "template.mustache",
   "FILE__TSCONFIG_JSON": "tsconfig.json",
+  "GLOB__ANY_BASEDIR": ".baseDir*",
   "GLOB__ANY_FILE__RECURSIVE": "**/*",
   "GLOB__JSON__RECURSIVE": "**/*.json",
   "GLOB__MANIFESTS": "{bower,package}.json",
@@ -12,5 +15,6 @@
   "PATH__NODE_MODULES": "./node_modules",
   "PATH__ROOT": ".",
   "PATH__SRC__MUSTACHE": "./src/mustache",
-  "PATH__SRC__TS": "./src/ts"
+  "PATH__SRC__TS": "./src/ts",
+  "PATH__TSCACHE": "./.tscache"
 }
