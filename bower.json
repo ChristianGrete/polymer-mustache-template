@@ -28,7 +28,8 @@
     "node_modules/",
     "npm-debug.log",
     "package.json",
-    "src/"
+    "src/",
+    "typings.json"
   ],
   "keywords": [
     "boilerplate",
