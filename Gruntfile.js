@@ -91,14 +91,25 @@ module.exports = function ( $grunt ) {
                     }
                 }
             },
-          'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE )
+          'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE ),
+          'ts': {
+              'options': {
+                  'fast': 'never'
+                },
+              'src': {
+                  'outDir': '<%= cfg.PATH__ROOT %>',
+                  'src': '<%= cfg.PATH__SRC__TS %>/<%= cfg.FILE__INDEX_TS %>',
+                  'tsconfig': '<%= cfg.PATH__CONFIG %>/<%= cfg.FILE__TSCONFIG_JSON %>'
+                }
+            }
         },
 
       _tasks = {
           'build': [
               'default',
               'clean',
-              'concat'
+              'concat',
+              'ts'
             ],
           'default': [
               'jsonlint'
