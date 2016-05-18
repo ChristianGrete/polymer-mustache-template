@@ -23,7 +23,7 @@ module.exports = function ( $grunt ) {
           'grunt-exec',
           'grunt-jsonlint',
           'grunt-modify-json',
-          'grunt-ts'
+          'grunt-ts*'
         ],
 
       _config = {
