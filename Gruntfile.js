@@ -47,7 +47,13 @@ module.exports = function ( $grunt ) {
           'cfg': _$grunt__file__readJSON( _URL__GRUNT_CONFIG_FILE ),
           'clean': {
               'dist': '<%= cfg.PATH__DIST %>',
-              'root': '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__INDEX_JS %>'
+              'root': [
+                  '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__DS_STORE %>',
+                  '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__INDEX_JS %>',
+                  '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__NPM_DEBUT_LOG %>',
+                  '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__ANY_BASEDIR %>',
+                  '<%= cfg.PATH__TSCACHE %>'
+                ]
             },
           'concat': {
               'options': {
