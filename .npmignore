@@ -12,6 +12,7 @@ bower_components/
 bower.json
 config/
 Gruntfile.js
+logo.svg
 node_modules/
 npm-debug.log
 src/
