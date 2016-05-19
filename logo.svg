@@ -20,7 +20,8 @@
     </clipPath>
 
     <rect clip-path="url(#mask)"
-          fill="#336" height="74"
+          fill="#039"
+          height="74"
           width="242"
           x="-1"
           y="-1" />
