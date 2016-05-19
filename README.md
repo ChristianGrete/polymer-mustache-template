@@ -25,6 +25,12 @@ Alternatively, it is also available on [Bower](http://bower.io):
 $ bower install --save polymer-mustache-template
 ```
 
+### Usage
+This template can easily be required as a CommonJS module in Node.js:
+```js
+var polymerMustacheTemplate = require('polymer-mustache-template');
+```
+
 ## Policy
 
 This is communist software. It is crafted with heart and soul to the best of the author’s knowledge and belief: _Not for profit but to satisfy the concrete needs._ Do whatever you want with it (as long as you keep the author’s copyright notice in all copies or substantial portions of it included) for free. Imagine how the world could be if others would produce and distribute their products for the same benefits and ask yourself why they’re actually not.
