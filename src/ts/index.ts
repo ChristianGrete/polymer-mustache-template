@@ -1,7 +1,11 @@
 import * as _fs from 'fs';
+import * as _path from 'path';
 
 export const TEMPLATE : string = _fs.readFileSync(
-    'dist/template.mustache',
+    _path.join(
+      __dirname,
+      'dist/template.mustache'
+    ),
     'utf8'
   );
 
