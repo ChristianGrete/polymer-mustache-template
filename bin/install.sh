@@ -4,4 +4,4 @@ cd "$( dirname "$0" )/..";
 
 npm cache clean && npm install;
 
-bower cache clean && bower install;
+npm run postinstaller;
