@@ -39,7 +39,8 @@
   },
   "files": [
     "*.md",
-    "dist/template.mustache"
+    "dist/template.mustache",
+    "index.js"
   ],
   "homepage": "https://github.com/ChristianGrete/polymer-mustache-template",
   "keywords": [
@@ -57,7 +58,7 @@
     "web"
   ],
   "license": "MIT",
-  "main": "dist/template.mustache",
+  "main": "index.js",
   "maintainers": [
     {
       "email": "webmaster@christiangrete.com",
