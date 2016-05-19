@@ -1,0 +1,23 @@
+{{! polymer-mustache-template@1.0.1 }}
+{{! A Mustache template for Polymer web components }}
+{{! https://github.com/ChristianGrete/polymer-mustache-template }}
+{{! Copyright (c) 2016 Christian Grete }}
+{{! Licensed under MIT License }}
+
+<link href="{{ imports.polymer }}" rel="import">
+
+{{# imports.additional }}
+  <link href="{{ . }}" rel="import">
+{{/ imports.additional }}
+
+<dom-module id="{{ id }}">
+  <template>
+    {{# style }}
+      <style>{{{ style }}}</style>
+    {{/ style }}
+
+    {{{ markup }}}
+  </template>
+
+  <script>{{{ script }}}</script>
+</dom-module>
