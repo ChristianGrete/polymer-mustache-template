@@ -14,7 +14,7 @@ hash="$( git rev-parse --verify HEAD )";
 
 grunt modify_json:manifests --verbose && grunt build --verbose;
 
-git add {bower,package}.json && git add dist;
+git add {bower,package,typings}.json && git add dist;
 
 grunt exec:commit --verbose && git push origin master --force;
 
