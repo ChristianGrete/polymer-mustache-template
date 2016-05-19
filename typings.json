@@ -3,5 +3,6 @@
     "node": "registry:dt/node#6.0.0+20160514165920"
   },
   "name": "polymer-mustache-template",
-  "resolution": "typings"
+  "resolution": "typings",
+  "version": "0.0.4"
 }
