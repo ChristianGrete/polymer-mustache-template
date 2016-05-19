@@ -9,4 +9,4 @@ export const TEMPLATE : string = _fs.readFileSync(
     'utf8'
   );
 
-export { TEMPLATE as default };
+export default TEMPLATE;
