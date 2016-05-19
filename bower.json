@@ -29,6 +29,7 @@
     "npm-debug.log",
     "package.json",
     "src/",
+    "typings/",
     "typings.json"
   ],
   "keywords": [
