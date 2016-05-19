@@ -40,7 +40,8 @@ module.exports = function ( $grunt ) {
                   'pushTo': 'origin',
                   'updateConfigs': [
                       null,
-                      'pkg'
+                      'pkg',
+                      null
                     ]
                 }
             },
@@ -83,7 +84,6 @@ module.exports = function ( $grunt ) {
                       '<%= cfg.PATH__ROOT %>': '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>'
                     },
                   'options': {
-                      'add': true,
                       'fields': {
                           'private': false
                         },
@@ -94,7 +94,8 @@ module.exports = function ( $grunt ) {
           'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE ),
           'ts': {
               'options': {
-                  'fast': 'never'
+                  'fast': 'never',
+                  'rootDir': '<%= cfg.PATH__SRC__TS %>'
                 },
               'src': {
                   'outDir': '<%= cfg.PATH__ROOT %>',
