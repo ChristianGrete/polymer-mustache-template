@@ -10,7 +10,7 @@
   "GLOB__ANY_BASEDIR": ".baseDir*",
   "GLOB__ANY_FILE__RECURSIVE": "**/*",
   "GLOB__JSON__RECURSIVE": "**/*.json",
-  "GLOB__MANIFESTS": "{bower,package}.json",
+  "GLOB__MANIFESTS": "{bower,package,typings}.json",
   "PATH__CONFIG": "./config",
   "PATH__DIST": "./dist",
   "PATH__NODE_MODULES": "./node_modules",
