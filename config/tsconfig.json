@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "sourceMap": false
-  }
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": false,
+    "target": "es5"
+  },
+  "files": [
+    "../typings/index.d.ts"
+  ]
 }
