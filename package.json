@@ -72,6 +72,8 @@
     "url": "git://github.com/ChristianGrete/polymer-mustache-template.git"
   },
   "scripts": {
+    "bower": "bower",
+    "grunt": "grunt",
     "postinstaller": "bower cache clean && bower install && typings install"
   },
   "version": "0.0.4"
