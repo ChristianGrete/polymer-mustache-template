@@ -1,3 +1,5 @@
+![polymer-mustache-template](logo.svg "Polymer Mustache Template")
+
 # polymer-mustache-template
 
 [![Task Runner](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com)
