@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg height="72px"
+     version="1.1"
+     viewBox="0 0 240 72"
+     width="240px"
+     x="0px"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     y="0px">
+  <g>
+    <defs>
+      <path d="M72,24h24L72,48L48,24L24,48v24L0,48l24-24h7L48,7l17,17H72zM240,48l-24-24h-7L192,7l-17,17h-7h-24l24,24l24-24l24,24v24L240,48zM96,24h24h24L120,0L96,24z"
+            id="clip" />
+    </defs>
+
+    <clipPath id="mask">
+      <use overflow="visible"
+           xlink:href="#clip" />
+    </clipPath>
+
+    <rect clip-path="url(#mask)"
+          fill="#336" height="74"
+          width="242"
+          x="-1"
+          y="-1" />
+    <rect clip-path="url(#mask)"
+          fill="#c06"
+          height="74"
+          width="121"
+          x="120"
+          y="-1" />
+
+    <g clip-path="url(#mask)">
+      <polygon fill="#fff"
+               opacity=".2"
+               points="24,19 24,48 -5,48" />
+      <polygon fill="#fff"
+               opacity=".4"
+               points="24,58 24,24 48,24" />
+      <polygon fill="#fff"
+               opacity=".6"
+               points="26,24 48,2 70,24" />
+      <polygon fill="#fff"
+               opacity=".4"
+               points="48,24 72,24 72,58" />
+      <polygon fill="#fff"
+               opacity=".2"
+               points="72,58 72,24 96,24" />
+      <polygon fill="#fff"
+               opacity=".8"
+               points="96,24 120,24 120,-10" />
+      <polygon fill="#fff"
+               opacity=".2"
+               points="168,58 168,24 144,24" />
+      <polygon fill="#fff"
+               opacity=".4"
+               points="192,24 168,24 168,58" />
+      <polygon fill="#fff"
+               opacity=".6"
+               points="214,24 192,2 170,24" />
+      <polygon fill="#fff"
+               opacity=".4"
+               points="216,58 216,24 192,24" />
+      <polygon fill="#fff"
+               opacity=".2"
+               points="216,19 216,48 245,48" />
+    </g>
+  </g>
+</svg>
