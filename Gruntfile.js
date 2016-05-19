@@ -95,7 +95,7 @@ module.exports = function ( $grunt ) {
           'ts': {
               'options': {
                   'fast': 'never',
-                  'rootDir': '<%= cfg.PATH__SRC__TS %>'
+                  'rootDir': '<%= cfg.PATH__ROOT %>'
                 },
               'src': {
                   'outDir': '<%= cfg.PATH__ROOT %>',
