@@ -20,6 +20,6 @@
   "PATH__SRC__MUSTACHE": "./src/mustache",
   "PATH__SRC__TS": "./src/ts",
   "PATH__TSCACHE": "./.tscache",
-  "PATTERN__README_LOGO_URL": "https://rawgit\\.com/ChristianGrete/polymer-mustache-template/develop/logo\\.svg",
-  "URL__CDN_RAWGIT_COM": "https://cdn.rawgit.com/ChristianGrete/polymer-mustache-template"
+  "URL__RAWGIT_COM": "https://rawgit.com/ChristianGrete",
+  "URL__CDN_RAWGIT_COM": "https://cdn.rawgit.com/ChristianGrete"
 }
