@@ -1,4 +1,4 @@
-![polymer-mustache-template](https://cdn.rawgit.com/ChristianGrete/polymer-mustache-template/master/logo.svg "Polymer Mustache Template")
+[![polymer-mustache-template](https://cdn.rawgit.com/ChristianGrete/polymer-mustache-template/master/logo.svg)](https://github.com/ChristianGrete/polymer-mustache-template)
 
 # polymer-mustache-template
 
