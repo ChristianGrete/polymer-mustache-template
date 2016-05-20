@@ -50,7 +50,7 @@
   "license": "MIT",
   "main": "dist/template.mustache",
   "name": "polymer-mustache-template",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git://github.com/ChristianGrete/polymer-mustache-template.git"
