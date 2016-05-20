@@ -40,7 +40,8 @@
   "files": [
     "*.md",
     "dist/template.mustache",
-    "index.js"
+    "index.{d.ts,js}",
+    "typings.json"
   ],
   "homepage": "https://github.com/ChristianGrete/polymer-mustache-template",
   "keywords": [
