@@ -3,6 +3,7 @@
 # polymer-mustache-template
 
 [![Task Runner](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com)
+[![Travis CI](https://img.shields.io/travis/ChristianGrete/polymer-mustache-template.svg)](https://travis-ci.org/ChristianGrete/polymer-mustache-template)
 [![Latest GitHub Tag](https://img.shields.io/github/tag/ChristianGrete/polymer-mustache-template.svg)](https://github.com/ChristianGrete/polymer-mustache-template/tags)
 [![Latest GitHub Release](https://img.shields.io/github/release/ChristianGrete/polymer-mustache-template.svg)](https://github.com/ChristianGrete/polymer-mustache-template/releases/latest)
 [![Node.js Module Version](https://img.shields.io/npm/v/polymer-mustache-template.svg)](https://www.npmjs.com/package/polymer-mustache-template)
