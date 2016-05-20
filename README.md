@@ -33,6 +33,24 @@ This template can easily be required as a CommonJS module in Node.js:
 var polymerMustacheTemplate = require('polymer-mustache-template');
 ```
 
+### Hash Example
+The following view data is referenced in the template file:
+```json
+{
+  "id": "custom-element",
+  "imports": {
+    "additional": [
+      "../optional/path/to/an/additional/component.html",
+      "../another/optional/path/to/an/additional/component.html"
+    ],
+    "polymer": "../required/path/to/polymer.html"
+  },
+  "markup": "<span>Hello world!</span> <!-- This property is required -->",
+  "script": "Polymer({ is: 'custom-element' }); // This property is required",
+  "style": ".optional-css-styles { color: red; }"
+}
+```
+
 ## Policy
 
 This is communist software. It is crafted with heart and soul to the best of the author’s knowledge and belief: _Not for profit but to satisfy the concrete needs._ Do whatever you want with it (as long as you keep the author’s copyright notice in all copies or substantial portions of it included) for free. Imagine how the world could be if others would produce and distribute their products for the same benefits and ask yourself why they’re actually not.
