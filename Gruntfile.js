@@ -106,8 +106,8 @@ module.exports = function ( $grunt ) {
                   'options': {
                       'replacements': [
                           {
-                            'pattern': /https:\/\/rawgit\.com\/ChristianGrete\/polymer-mustache-template\/develop\/logo\.svg/,
-                            'replacement': 'https://cdn.rawgit.com/ChristianGrete/polymer-mustache-template/v<%= pkg.version %>/logo.svg'
+                            'pattern': '<%= cfg.URL__RAWGIT_COM %>/<%= pkg.name %>/develop/<%= cfg.FILE__LOGO_SVG %>',
+                            'replacement': '<%= cfg.URL__CDN_RAWGIT_COM %>/<%= pkg.name %>/v<%= pkg.version %>/<%= cfg.FILE__LOGO_SVG %>'
                           }
                         ]
                     }
