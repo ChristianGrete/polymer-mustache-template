@@ -1,0 +1,19 @@
+install: bin/install.sh
+language: node_js
+node_js:
+  - "0.10"
+  - "0.11"
+  - "0.12"
+  - "4"
+  - "5"
+  - "6.0"
+  - "6.1"
+  - "6.2"
+  - "6"
+  - "iojs"
+  - "stable"
+notifications:
+  email: webmaster@christiangrete.com
+script:
+  - npm run grunt -- build --verbose
+  - node index
