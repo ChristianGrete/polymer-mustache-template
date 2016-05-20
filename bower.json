@@ -19,6 +19,7 @@
     ".gitignore",
     ".npmignore",
     ".tm_properties",
+    ".travis.yml",
     ".tscache/",
     "bin/",
     "bower_components/",
