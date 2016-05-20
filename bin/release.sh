@@ -16,7 +16,7 @@ npm run grunt -- modify_json:manifests --verbose;
 
 npm run grunt -- build --verbose;
 
-git add {bower,package,typings}.json && git add dist;
+git add {bower,package,typings}.json && git add dist && git add README.md;
 
 npm run grunt -- exec:commit --verbose && git push origin master --force;
 
