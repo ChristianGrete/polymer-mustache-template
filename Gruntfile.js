@@ -23,6 +23,7 @@ module.exports = function ( $grunt ) {
           'grunt-exec',
           'grunt-jsonlint',
           'grunt-modify-json',
+          'grunt-string-replace',
           'grunt-ts*'
         ],
 
@@ -92,6 +93,26 @@ module.exports = function ( $grunt ) {
                 }
             },
           'pkg': _$grunt__file__readJSON( _URL__NPM_MANIFEST_FILE ),
+          'string-replace': {
+              'readme': {
+                  'files': [
+                      {
+                        'cwd': '<%= cfg.PATH__ROOT %>',
+                        'dest': '<%= cfg.PATH__ROOT %>',
+                        'expand': true,
+                        'src': '<%= cfg.FILE__README_MD %>'
+                      }
+                    ],
+                  'options': {
+                      'replacements': [
+                          {
+                            'pattern': /https:\/\/rawgit\.com\/ChristianGrete\/polymer-mustache-template\/develop\/logo\.svg/,
+                            'replacement': 'https://cdn.rawgit.com/ChristianGrete/polymer-mustache-template/v<%= pkg.version %>/logo.svg'
+                          }
+                        ]
+                    }
+                }
+            },
           'ts': {
               'options': {
                   'fast': 'never',
@@ -116,7 +137,8 @@ module.exports = function ( $grunt ) {
               'default',
               'clean',
               'concat',
-              'ts'
+              'ts',
+              'string-replace'
             ],
           'default': [
               'jsonlint',
