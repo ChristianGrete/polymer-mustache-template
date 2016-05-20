@@ -38,7 +38,7 @@ var polymerMustacheTemplate = require('polymer-mustache-template');
 The following view data is referenced in the template file:
 ```json
 {
-  "id": "custom-element",
+  "id": "example-element",
   "imports": {
     "additional": [
       "../optional/path/to/an/additional/component.html",
@@ -47,7 +47,7 @@ The following view data is referenced in the template file:
     "polymer": "../required/path/to/polymer.html"
   },
   "markup": "<span>Hello world!</span> <!-- This property is required -->",
-  "script": "Polymer({ is: 'custom-element' }); // This property is required",
+  "script": "Polymer({ is: 'example-element' }); // This property is required",
   "style": ".optional-css-styles { color: red; }"
 }
 ```
