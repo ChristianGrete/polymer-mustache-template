@@ -24,7 +24,7 @@
     "bower_components/",
     "config/",
     "Gruntfile.js",
-    "index.js",
+    "index.{d.ts,js}",
     "logo.svg",
     "node_modules/",
     "npm-debug.log",
