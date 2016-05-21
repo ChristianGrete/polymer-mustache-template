@@ -36,19 +36,19 @@ var polymerMustacheTemplate = require('polymer-mustache-template');
 
 ### Hash Example
 The following view data is referenced in the template file:
-```json
+```js
 {
-  "id": "example-element",
-  "imports": {
-    "additional": [
-      "../optional/path/to/an/additional/component.html",
-      "../another/optional/path/to/an/additional/component.html"
+  id: 'example-element',
+  imports: {
+    additional: [
+      '../optional/path/to/an/additional/component.html',
+      '../another/optional/path/to/an/additional/component.html'
     ],
-    "polymer": "../required/path/to/polymer.html"
+    polymer: '../required/path/to/polymer.html'
   },
-  "markup": "<span>Hello world!</span> <!-- This property is required -->",
-  "script": "Polymer({ is: 'example-element' }); // This property is required",
-  "style": ".optional-css-styles { color: red; }"
+  'markup': '<p>Hello world!</p> <!-- This property is required -->',
+  'script': 'Polymer({ is: "example-element" }); // This property is required',
+  'style': '.optional-css-styles { color: red; }'
 }
 ```
 
