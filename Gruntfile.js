@@ -2,8 +2,9 @@
 
 var
 
-  _URL__MUSTACHE_BANNER_FILE = './config/banner.mustache',
+  _URL__ECMASCRIPT_BANNER_FILE = './config/banner.es',
   _URL__GRUNT_CONFIG_FILE = './config/grunt.json',
+  _URL__MUSTACHE_BANNER_FILE = './config/banner.mustache',
   _URL__NPM_MANIFEST_FILE = './package.json',
 
   _gruntRegisterTasks = require('grunt-register-tasks'),
