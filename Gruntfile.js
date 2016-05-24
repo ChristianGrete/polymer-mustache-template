@@ -59,13 +59,13 @@ module.exports = function ( $grunt ) {
                 ]
             },
           'concat': {
-              'options': {
-                  'banner': _$grunt__file.read( _URL__MUSTACHE_BANNER_FILE ) + '\n',
-                },
-              'src': {
+              'src.mustache': {
                   'cwd': '<%= cfg.PATH__SRC__MUSTACHE %>',
                   'dest': '<%= cfg.PATH__DIST %>',
                   'expand': true,
+                  'options': {
+                      'banner': _$grunt__file.read( _URL__MUSTACHE_BANNER_FILE ) + '\n',
+                    },
                   'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'
                 }
             },
