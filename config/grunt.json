@@ -1,6 +1,7 @@
 {
   "FILE__BOWERRC": ".bowerrc",
   "FILE__DS_STORE": ".DS_Store",
+  "FILE__INDEX_D_TS": "index.d.ts",
   "FILE__INDEX_JS": "index.js",
   "FILE__INDEX_TS": "index.ts",
   "FILE__LOGO_SVG": "logo.svg",
@@ -13,7 +14,6 @@
   "GLOB__ANY_FILE__RECURSIVE": "**/*",
   "GLOB__JSON__RECURSIVE": "**/*.json",
   "GLOB__MANIFESTS": "{bower,package,typings}.json",
-  "GLOB__TS__RECURSIVE": "**/*.ts",
   "PATH__CONFIG": "./config",
   "PATH__DIST": "./dist",
   "PATH__NODE_MODULES": "./node_modules",
