@@ -18,6 +18,10 @@ module.exports = function ( $grunt ) {
       _$grunt__file = $grunt.file,
       _$grunt__file__readJSON = _$grunt__file.readJSON,
 
+      _TEMPLATE__ECMASCRIPT_BANNER
+        = _$grunt__file.read( _URL__ECMASCRIPT_BANNER_FILE )
+          + '\n',
+
       _plugins = [
           'grunt-bump',
           'grunt-contrib-*',
@@ -59,12 +63,22 @@ module.exports = function ( $grunt ) {
                 ]
             },
           'concat': {
+              'root': {
+                  'cwd': '<%= cfg.PATH__ROOT %>',
+                  'dest': '<%= cfg.PATH__ROOT %>',
+                  'expand': true,
+                  'options': {
+                      'banner': _TEMPLATE__ECMASCRIPT_BANNER
+                    },
+                  'src': '<%= cfg.FILE__INDEX_JS %>'
+                },
               'src.mustache': {
                   'cwd': '<%= cfg.PATH__SRC__MUSTACHE %>',
                   'dest': '<%= cfg.PATH__DIST %>',
                   'expand': true,
                   'options': {
-                      'banner': _$grunt__file.read( _URL__MUSTACHE_BANNER_FILE ) + '\n',
+                      'banner': _$grunt__file.read( _URL__MUSTACHE_BANNER_FILE )
+                        + '\n'
                     },
                   'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'
                 },
@@ -73,7 +87,7 @@ module.exports = function ( $grunt ) {
                   'dest': '<%= cfg.PATH__ROOT %>',
                   'expand': true,
                   'options': {
-                      'banner': _$grunt__file.read( _URL__ECMASCRIPT_BANNER_FILE ) + '\n',
+                      'banner': _TEMPLATE__ECMASCRIPT_BANNER
                     },
                   'src': '<%= cfg.FILE__INDEX_D_TS %>'
                 }
@@ -149,6 +163,7 @@ module.exports = function ( $grunt ) {
               'concat:src.mustache',
               'concat:src.ts',
               'ts',
+              'concat:root',
               'string-replace'
             ],
           'default': [
