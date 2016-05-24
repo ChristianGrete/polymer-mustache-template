@@ -2,7 +2,7 @@
 
 var
 
-  _URL__BANNER_FILE = './config/banner.mustache',
+  _URL__MUSTACHE_BANNER_FILE = './config/banner.mustache',
   _URL__GRUNT_CONFIG_FILE = './config/grunt.json',
   _URL__NPM_MANIFEST_FILE = './package.json',
 
@@ -59,7 +59,7 @@ module.exports = function ( $grunt ) {
             },
           'concat': {
               'options': {
-                  'banner': _$grunt__file.read( _URL__BANNER_FILE ) + '\n',
+                  'banner': _$grunt__file.read( _URL__MUSTACHE_BANNER_FILE ) + '\n',
                 },
               'src': {
                   'cwd': '<%= cfg.PATH__SRC__MUSTACHE %>',
