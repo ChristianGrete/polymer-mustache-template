@@ -12,6 +12,7 @@
   "FILE__TSLINT_JSON": "tslint.json",
   "GLOB__ANY_BASEDIR": ".baseDir*",
   "GLOB__ANY_FILE__RECURSIVE": "**/*",
+  "GLOB__ANY_INDEX": "index.*",
   "GLOB__JSON__RECURSIVE": "**/*.json",
   "GLOB__MANIFESTS": "{bower,package,typings}.json",
   "PATH__CONFIG": "./config",
