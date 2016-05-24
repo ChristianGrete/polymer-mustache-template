@@ -67,6 +67,15 @@ module.exports = function ( $grunt ) {
                       'banner': _$grunt__file.read( _URL__MUSTACHE_BANNER_FILE ) + '\n',
                     },
                   'src': '<%= cfg.FILE__TEMPLATE_MUSTACHE %>'
+                },
+              'src.ts': {
+                  'cwd': '<%= cfg.PATH__SRC__TS %>',
+                  'dest': '<%= cfg.PATH__ROOT %>',
+                  'expand': true,
+                  'options': {
+                      'banner': _$grunt__file.read( _URL__ECMASCRIPT_BANNER_FILE ) + '\n',
+                    },
+                  'src': '<%= cfg.FILE__INDEX_D_TS %>'
                 }
             },
           'exec': {
