@@ -146,7 +146,8 @@ module.exports = function ( $grunt ) {
           'build': [
               'default',
               'clean',
-              'concat',
+              'concat:src.mustache',
+              'concat:src.ts',
               'ts',
               'string-replace'
             ],
