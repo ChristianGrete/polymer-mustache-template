@@ -2,7 +2,7 @@
 .DS_Store
 .tscache/
 bower_components/
-index.{d.ts,js}
+index.*
 node_modules/
 npm-debug.log
 typings/
