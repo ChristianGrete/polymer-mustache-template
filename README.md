@@ -5,10 +5,9 @@
 [![Travis CI](https://img.shields.io/travis/ChristianGrete/polymer-mustache-template.svg)](https://travis-ci.org/ChristianGrete/polymer-mustache-template)
 [![Task Runner](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com)
 [![Latest GitHub Tag](https://img.shields.io/github/tag/ChristianGrete/polymer-mustache-template.svg)](https://github.com/ChristianGrete/polymer-mustache-template/tags)
-[![Latest GitHub Release](https://img.shields.io/github/release/ChristianGrete/polymer-mustache-template.svg)](https://github.com/ChristianGrete/polymer-mustache-template/releases/latest)
+[![Bower Component Version](https://img.shields.io/bower/v/polymer-mustache-template.svg)](http://bower.io/search/?q=polymer-mustache-template)
 [![Node.js Module Version](https://img.shields.io/npm/v/polymer-mustache-template.svg)](https://www.npmjs.com/package/polymer-mustache-template)
 [![Downloads via npm per Month](https://img.shields.io/npm/dm/polymer-mustache-template.svg)](https://www.npmjs.com/package/polymer-mustache-template)
-[![Bower Component Version](https://img.shields.io/bower/v/polymer-mustache-template.svg)](http://bower.io/search/?q=polymer-mustache-template)
 
 > A [Mustache](https://mustache.github.io) template for [Polymer](https://www.polymer-project.org) web components
 
