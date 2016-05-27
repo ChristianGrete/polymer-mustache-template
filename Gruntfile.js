@@ -175,8 +175,8 @@ module.exports = function ( $grunt ) {
               'clean',
               'concat',
               'ts',
-              'uglify'/*,
-              'string-replace'*/
+              'uglify',
+              'string-replace'
             ],
           'default': [
               'jsonlint',
