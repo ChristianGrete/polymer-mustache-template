@@ -63,15 +63,6 @@ module.exports = function ( $grunt ) {
                 ]
             },
           'concat': {
-              'root': {
-                  'cwd': '<%= cfg.PATH__ROOT %>',
-                  'dest': '<%= cfg.PATH__ROOT %>',
-                  'expand': true,
-                  'options': {
-                      'banner': _TEMPLATE__ECMASCRIPT_BANNER
-                    },
-                  'src': '<%= cfg.FILE__INDEX_JS %>'
-                },
               'src.mustache': {
                   'cwd': '<%= cfg.PATH__SRC__MUSTACHE %>',
                   'dest': '<%= cfg.PATH__DIST %>',
@@ -153,6 +144,27 @@ module.exports = function ( $grunt ) {
                   'configuration': '<%= cfg.PATH__CONFIG %>/<%= cfg.FILE__TSLINT_JSON %>'
                 },
               'src': '<%= cfg.PATH__SRC__TS %>/<%= cfg.FILE__INDEX_TS %>'
+            },
+          'uglify': {
+              'options': {
+                  'banner': _TEMPLATE__ECMASCRIPT_BANNER,
+                  'beautify': {
+                      'beautify': true,
+                      'indent_level': 2,
+                      'quote_keys': true,
+                      'semicolons': false
+                    },
+                  'compress': false,
+                  'mangle': false,
+                  'preserveComments': 'all',
+                  'quoteStyle': 1
+                },
+              'root': {
+                  'cwd': '<%= cfg.PATH__ROOT %>',
+                  'dest': '<%= cfg.PATH__ROOT %>',
+                  'expand': true,
+                  'src': '<%= cfg.FILE__INDEX_JS %>'
+                }
             }
         },
 
@@ -160,10 +172,9 @@ module.exports = function ( $grunt ) {
           'build': [
               'default',
               'clean',
-              'concat:src.mustache',
-              'concat:src.ts',
+              'concat',
               'ts',
-              'concat:root',
+              'uglify',
               'string-replace'
             ],
           'default': [
