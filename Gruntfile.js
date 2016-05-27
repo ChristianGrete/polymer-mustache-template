@@ -155,6 +155,7 @@ module.exports = function ( $grunt ) {
                       'semicolons': false
                     },
                   'compress': false,
+                  'footer': '\n',
                   'mangle': false,
                   'preserveComments': 'all',
                   'quoteStyle': 1
@@ -174,8 +175,8 @@ module.exports = function ( $grunt ) {
               'clean',
               'concat',
               'ts',
-              'uglify',
-              'string-replace'
+              'uglify'/*,
+              'string-replace'*/
             ],
           'default': [
               'jsonlint',
