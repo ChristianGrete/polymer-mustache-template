@@ -5,7 +5,7 @@
   "FILE__INDEX_JS": "index.js",
   "FILE__INDEX_TS": "index.ts",
   "FILE__LOGO_SVG": "logo.svg",
-  "FILE__NPM_DEBUT_LOG": "npm-debug.log",
+  "FILE__NPM_DEBUG_LOG": "npm-debug.log",
   "FILE__README_MD": "README.md",
   "FILE__TEMPLATE_MUSTACHE": "template.mustache",
   "FILE__TSCONFIG_JSON": "tsconfig.json",

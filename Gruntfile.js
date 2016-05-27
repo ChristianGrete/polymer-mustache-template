@@ -56,7 +56,7 @@ module.exports = function ( $grunt ) {
               'dist': '<%= cfg.PATH__DIST %>',
               'root': [
                   '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__DS_STORE %>',
-                  '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__NPM_DEBUT_LOG %>',
+                  '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__NPM_DEBUG_LOG %>',
                   '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__ANY_BASEDIR %>',
                   '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__ANY_INDEX %>',
                   '<%= cfg.PATH__TSCACHE %>'
