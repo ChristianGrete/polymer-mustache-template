@@ -114,6 +114,7 @@ module.exports = function ( $grunt ) {
                     },
                   'options': {
                       'fields': {
+                          'devDependencies': {},
                           'scripts': {}
                         }
                     }
