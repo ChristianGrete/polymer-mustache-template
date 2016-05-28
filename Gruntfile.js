@@ -102,8 +102,20 @@ module.exports = function ( $grunt ) {
                   'options': {
                       'fields': {
                           'private': false
-                        },
-                      'indent': 2
+                        }
+                    }
+                },
+              'options': {
+                  'indent': 2
+                },
+              'pkg': {
+                  'files': {
+                      '<%= cfg.PATH__ROOT %>': _URL__NPM_MANIFEST_FILE
+                    },
+                  'options': {
+                      'fields': {
+                          'scripts': {}
+                        }
                     }
                 }
             },
