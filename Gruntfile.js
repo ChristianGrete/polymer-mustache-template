@@ -84,7 +84,7 @@ module.exports = function ( $grunt ) {
                 }
             },
           'exec': {
-              'commit': 'git commit -m "release(v<%= pkg.version %>): distribute"',
+              'commit': 'git commit -m "release(v<%= pkg.version %>): distribute [ci skip]"',
               'tag': 'git tag -a v<%= pkg.version %> -m "<%= grunt.option(\'message\') %>"'
             },
           'jsonlint': {
