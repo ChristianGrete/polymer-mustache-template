@@ -39,7 +39,7 @@ module.exports = function ( $grunt ) {
                   'commitFiles': [
                       '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>'
                     ],
-                  'commitMessage': 'bump(version): %VERSION%',
+                  'commitMessage': 'bump(version): %VERSION% [ci skip]',
                   'createTag': false,
                   'files': '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>',
                   'push': true,
