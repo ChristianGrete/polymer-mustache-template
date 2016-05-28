@@ -30,7 +30,7 @@ $ bower install --save polymer-mustache-template
 ### Usage
 This template can easily be required as a CommonJS module in Node.js:
 ```js
-var polymerMustacheTemplate = require('polymer-mustache-template');
+var polymerMustacheTemplate = require('polymer-mustache-template').default;
 ```
 
 ### Hash Example
