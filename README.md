@@ -45,7 +45,7 @@ The following view data is referenced in the template file:
     ],
     polymer: '../required/path/to/polymer.html'
   },
-  markup: '<p>Hello world!</p> <!-- This property is required -->',
+  markup: '<p>Hello world!</p> <!-- This property is optional -->',
   script: 'Polymer({ is: "example-element" }); // This property is required',
   style: '.optional-css-styles { color: red; }'
 }
