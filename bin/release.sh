@@ -14,7 +14,7 @@ hash="$( git rev-parse --verify HEAD )";
 
 npm run grunt -- modify_json:manifests --verbose;
 
-npm run grunt -- build --verbose;
+npm run grunt -- build --verbose && npm run grunt -- string-replace --verbose;
 
 git add {bower,package,typings}.json && git add dist && git add README.md;
 
