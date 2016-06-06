@@ -153,7 +153,7 @@ module.exports = function ( $grunt ) {
               'options': {
                   'configuration': '<%= cfg.PATH__CONFIG %>/<%= cfg.FILE__TSLINT_JSON %>'
                 },
-              'src': '<%= cfg.PATH__SRC__TS %>/<%= cfg.FILE__INDEX_TS %>'
+              'src': '<%= cfg.PATH__SRC__TS %>/<%= cfg.GLOB__TS__RECURSIVE %>'
             },
           'uglify': {
               'options': {
