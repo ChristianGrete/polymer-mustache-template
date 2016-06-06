@@ -18,7 +18,6 @@
   "dependencies": {},
   "description": "A Mustache template for Polymer web components",
   "devDependencies": {
-    "bower": "^1.7.9",
     "grunt": "^1.0.1",
     "grunt-bump": "^0.8.0",
     "grunt-cli": "^1.2.0",
@@ -76,9 +75,8 @@
     "url": "git://github.com/ChristianGrete/polymer-mustache-template.git"
   },
   "scripts": {
-    "bower": "bower",
     "grunt": "grunt",
-    "postinstaller": "bower cache clean && bower install && typings install"
+    "postinstaller": "typings install -V"
   },
   "typings": "index.d.ts",
   "version": "1.5.0"
