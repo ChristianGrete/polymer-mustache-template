@@ -1,5 +1,5 @@
-import * as _fs from 'fs';
-import * as _path from 'path';
+import * as _fs from 'fs'
+import * as _path from 'path'
 
 export const TEMPLATE : string = _fs.readFileSync(
     _path.join(
@@ -7,6 +7,6 @@ export const TEMPLATE : string = _fs.readFileSync(
       'dist/template.mustache'
     ),
     'utf8'
-  );
+  )
 
-export default TEMPLATE;
+export default TEMPLATE
