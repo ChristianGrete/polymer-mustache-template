@@ -88,10 +88,7 @@ module.exports = function ( $grunt ) {
               'tag': 'git tag -a v<%= pkg.version %> -m "<%= grunt.option(\'message\') %>"'
             },
           'jsonlint': {
-              'config': [
-                  '<%= cfg.PATH__CONFIG %>/<%= cfg.GLOB__JSON__RECURSIVE %>',
-                  '<%= cfg.PATH__ROOT %>/<%= cfg.FILE__BOWERRC %>'
-                ],
+              'config': '<%= cfg.PATH__CONFIG %>/<%= cfg.GLOB__JSON__RECURSIVE %>',
               'manifests': '<%= cfg.PATH__ROOT %>/<%= cfg.GLOB__MANIFESTS %>'
             },
           'modify_json': {

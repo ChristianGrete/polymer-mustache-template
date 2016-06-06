@@ -1,5 +1,4 @@
 .baseDir*
-.bowerrc
 .DS_Store
 .editorconfig
 .git/
@@ -9,7 +8,6 @@
 .travis.yml
 .tscache/
 bin/
-bower_components/
 bower.json
 config/
 Gruntfile.js

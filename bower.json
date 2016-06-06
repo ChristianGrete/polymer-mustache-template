@@ -12,7 +12,6 @@
   "homepage": "https://github.com/ChristianGrete/polymer-mustache-template",
   "ignore": [
     ".baseDir*",
-    ".bowerrc",
     ".DS_Store",
     ".editorconfig",
     ".git/",
@@ -22,7 +21,6 @@
     ".travis.yml",
     ".tscache/",
     "bin/",
-    "bower_components/",
     "config/",
     "Gruntfile.js",
     "index.*",
