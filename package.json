@@ -37,9 +37,10 @@
     "typings": "^1.0.4"
   },
   "files": [
-    "*.md",
     "dist/template.mustache",
     "index.{d.ts,js}",
+    "LICENSE.md",
+    "README.md",
     "typings.json"
   ],
   "homepage": "https://github.com/ChristianGrete/polymer-mustache-template",
