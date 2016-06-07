@@ -24,7 +24,7 @@ echo "\r\nPlease enter a short message as a description for this tag/release:";
 
 read message && npm run grunt -- exec:tag --message="$message" --verbose;
 
-git push origin --tags && npm run grunt -- modify_json:pkg --verbose;
+git push origin --tags; # npm run grunt -- modify_json:pkg --verbose;
 
 npm cache clean && npm publish ./ --verbose;
 
