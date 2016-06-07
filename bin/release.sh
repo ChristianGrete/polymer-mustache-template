@@ -26,6 +26,8 @@ read message && npm run grunt -- exec:tag --message="$message" --verbose;
 
 git push origin --tags && npm run grunt -- modify_json:pkg --verbose;
 
-npm publish ./ && git reset $hash --hard && npm run grunt -- clean --verbose;
+npm publish ./ --verbose;
+
+git reset $hash --hard && npm run grunt -- clean --verbose;
 
 git push origin master --force && git checkout develop;
