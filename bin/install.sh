@@ -2,6 +2,6 @@
 
 cd "$( dirname "$0" )/..";
 
-npm cache clean --verbose && npm install --verbose;
+npm cache clean -ddd && npm install -ddd;
 
-npm run --verbose postinstaller;
+npm run -ddd postinstaller;
