@@ -2,4 +2,10 @@
 
 cd "$( dirname "$0" )/..";
 
-npm cache -ddd clean && npm run -ddd grunt -- -v clean;
+echo "Cleaning npm cache\r\n";
+
+npm cache ls && echo "\r" && npm cache -ddd clean;
+
+echo "\r\nRunning npm script \`grunt -d --stack clean\`\r\n";
+
+npm run -ddd grunt -- -d --stack clean;
