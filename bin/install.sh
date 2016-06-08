@@ -1,7 +1,11 @@
 #!/bin/sh
 
-cd "$( dirname "$0" )/..";
+cd "$( dirname "$0" )/.."
 
-npm cache -ddd clean && npm install -ddd;
+echo "Installing npm dependencies\r\n"
 
-npm run -ddd postinstaller;
+npm cache -s clean
+
+npm i -q
+
+npm run -q postinstaller

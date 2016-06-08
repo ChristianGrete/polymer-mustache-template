@@ -2,4 +2,4 @@
 
 cd "$( dirname "$0" )/..";
 
-npm run -ddd grunt -- -v build;
+npm run -q grunt -- -v build;
