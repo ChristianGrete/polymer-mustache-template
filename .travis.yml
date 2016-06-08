@@ -15,5 +15,5 @@ node_js:
 notifications:
   email: webmaster@christiangrete.com
 script:
-  - npm run grunt -- build --verbose
+  - bin/build.sh
   - node index
