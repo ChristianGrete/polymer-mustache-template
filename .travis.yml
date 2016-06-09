@@ -16,4 +16,4 @@ notifications:
   email: webmaster@christiangrete.com
 script:
   - bin/build.sh
-  - node index
+  - bin/test.sh
