@@ -75,7 +75,7 @@
   },
   "scripts": {
     "grunt": "grunt",
-    "postinstaller": "typings install -V"
+    "typings": "typings"
   },
   "typings": "index.d.ts",
   "version": "1.5.11"
