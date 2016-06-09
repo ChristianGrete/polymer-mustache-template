@@ -1,33 +1,45 @@
 #!/bin/sh
 
-cd "$( dirname "$0" )/..";
+# Changes the working directory to the project root
+cd "$( dirname "$0" )/.."
 
-sh bin/install.sh;
+# Makes sure that all dependencies are installed
+sh bin/install.sh
 
-echo "\r\nPlease specify the version sequence to bump (e.g. major, minor or patch):";
+# Prompts the user to input the version number category
+numbers="major, minor, patch"
+echo "\rPlease type in the version number to be increased ($numbers, etc.):\r"
+read number
 
-read version && npm run -ddd grunt -- -v bump:$version;
+# Increases the version number, commits and pushes the manifests
+npm run -q grunt -- bump:$number
 
-git checkout master && git merge develop;
+# Updates the master branch
+git checkout master && git merge develop
 
-hash="$( git rev-parse --verify HEAD )";
+# Stores the latest commit hash
+commit="$( git rev-parse --verify HEAD )"
 
-npm run -ddd grunt -- -v modify_json:manifests;
+# Generates an artifact
+sh bin/build.sh
 
-npm run -ddd grunt -- -v build && npm run -ddd grunt -- -v string-replace;
+# Prepares, commits and temporary pushes the artifact
+npm run -q grunt -- string-replace modify_json:manifests
+git add {bower,package,typings}.json dist README.md
+npm run -q grunt -- exec:commit && git push -f origin master
 
-git add {bower,package,typings}.json && git add dist && git add README.md;
+# Prompts the user to input a tagging message for Git
+echo "\r\nPlease type in a short annotation message for this release:\r"
+read message
 
-npm run -ddd grunt -- -v exec:commit && git push origin master --force;
+# Creates and pushes an annotated tag as a release point
+npm run -q grunt -- exec:tag --message="$message" && git push origin --tags
 
-echo "\r\nPlease enter a short message as a description for this tag/release:";
+# Prepares and publishes the artifact to the npmjs.com registry
+npm run -q grunt -- modify_json:pkg && npm publish --loglevel http ./
 
-read message && npm run -ddd grunt -- -v exec:tag --message="$message";
+# Resets the stored commit and cleans the working directory
+git reset --hard $commit && sh bin/clean.sh
 
-git push origin --tags && npm run -ddd grunt -- -v modify_json:pkg;
-
-npm cache -ddd clean && npm publish -ddd ./;
-
-git reset $hash --hard && npm run -ddd grunt -- -v clean;
-
-git push origin master --force && git checkout develop;
+# Resets the remote and locally checks out the develop branch
+git push -f origin master && git checkout develop
