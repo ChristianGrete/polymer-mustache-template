@@ -8,7 +8,7 @@ sh bin/install.sh
 
 # Prompts the user to input the version number category
 numbers="major, minor, patch"
-echo "\rPlease type in the version number to be increased ($numbers, etc.):\r"
+echo "\rPlease type in the version number to increase ($numbers, etc.):\r"
 read number
 
 # Increases the version number, commits and pushes the manifests
