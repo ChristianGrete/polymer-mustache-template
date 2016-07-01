@@ -1,6 +1,6 @@
 [![polymer-mustache-template](https://rawgit.com/ChristianGrete/polymer-mustache-template/develop/logo.svg "polymer-mustache-template")](https://github.com/ChristianGrete/polymer-mustache-template)
 
-# polymer-mustache-template
+# [polymer-mustache-template](https://github.com/ChristianGrete/polymer-mustache-template)
 
 [![Travis CI](https://img.shields.io/travis/ChristianGrete/polymer-mustache-template.svg)](https://travis-ci.org/ChristianGrete/polymer-mustache-template)
 [![Task Runner](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com)
